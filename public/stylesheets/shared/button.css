@@ -1,0 +1,49 @@
+:root {
+  --color-button-primary-text: rgb(0, 68, 102);
+  --color-button-primary-background: rgb(168, 226, 255);
+  --color-button-border: black;
+  --color-button-danger-text: black;
+  --color-button-danger-background: hsl(20, 100%, 83%);
+}
+
+.btn {
+  border: 1px solid var(--color-btn-border);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-family: "Gotham Rounded";
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-primary {
+  color: var(--color-button-primary-text);
+  background-color: var(--color-button-primary-background);
+}
+
+.btn-primary:hover {
+  background-color: rgb(117, 209, 255);
+}
+
+.btn-danger {
+  color: var(--color-button-danger-text);
+  background-color: var(--color-button-danger-background);
+}
+
+.btn-danger:hover {
+  background-color: rgb(255, 163, 117);
+}
+
+.btn-row {
+  display: flex;
+  align-items: flex-start;
+}
+
+.btn-row > *:first-child {
+  margin-left: 0;
+}
+
+.btn-row > * {
+  margin-left: 1rem;
+}
